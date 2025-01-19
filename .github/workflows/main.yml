@@ -13,7 +13,7 @@ jobs:
 
       - name: SSH 키 저장
         run: |
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > JWJ.pem
+          echo "${{ secrets.JWJ }}" > JWJ.pem
           chmod 600 JWJ.pem
 
       - name: known_hosts 저장
