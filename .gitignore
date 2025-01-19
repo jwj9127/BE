@@ -36,4 +36,8 @@ out/
 ### VS Code ###
 .vscode/
 
+# 배포 pem키
 jwj.pem
+
+# 카카오 API 키
+src/main/resources/application-API-KEY.properties
