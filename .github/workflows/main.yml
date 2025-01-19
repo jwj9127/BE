@@ -16,6 +16,8 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > JWJ.pem
           chmod 600 JWJ.pem
 
+      - name: known_hosts 저장
+        run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
