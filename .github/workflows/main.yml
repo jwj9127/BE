@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Docker 이미지 빌드
+        run: |
+          ssh -i ${{ jwj.pem }} ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
+            cd BE
+            git pull origin main  # 최신 상태로 갱신 (변경사항을 반영)
+            docker build -t jwj9127/test:latest .
+            docker images
+          EOF
+
+      - name: EC2에 배포
+        run: |
+          ssh -i ${{ jwj.pem }} ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
+            docker stop affectionate_zhukovsky
+            docker rm affectionate_zhukovsky
+            
+            docker run -d --name affectionate_zhukovsky jwj9127/test:latest
+          EOF
