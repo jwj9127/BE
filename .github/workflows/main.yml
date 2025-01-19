@@ -13,15 +13,15 @@ jobs:
       - name: SSH 키 저장
         run: |
           # GitHub Secrets에서 SSH_PRIVATE_KEY 가져오기
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > jwj.pem
+          chmod 600 jwj.pem
 
           mkdir -p ~/.ssh
           echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
     
       - name: Docker 이미지 빌드
         run: |
-          ssh -i private_key.pem ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
+          ssh -i jwj.pem ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
             cd BE
             git pull origin main
             docker build -t jwj9127/test:latest .
@@ -30,7 +30,7 @@ jobs:
 
       - name: EC2에 배포
         run: |
-          ssh -i private_key.pem ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
+          ssh -i jwj.pem ubuntu@ec2-3-34-197-183.ap-northeast-2.compute.amazonaws.com << 'EOF'
             docker stop affectionate_zhukovsky
             docker rm affectionate_zhukovsky
             
