@@ -41,3 +41,6 @@ jwj.pem
 
 # 카카오 API 키
 src/main/resources/application-API-KEY.properties
+
+# properties
+src/main/resources/application.properties
