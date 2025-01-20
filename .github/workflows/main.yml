@@ -28,12 +28,6 @@ jobs:
       - name: Docker Hub 로그인
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
-      - name: 권한 부여
-        run: chmod +x gradlew
-
-      - name: 프로젝트 build
-        run: ./gradlew build
-
       - name: 이미지 build, push
         run: |
           docker build -t jwj9127/test:latest .
