@@ -1,4 +1,4 @@
-package com.example.cloud.dto;
+package com.example.cloud.oauth2.dto;
 
 import java.util.Map;
 

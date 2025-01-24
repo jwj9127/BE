@@ -1,4 +1,4 @@
-package com.example.cloud.jwt;
+package com.example.cloud.oauth2.jwt;
 
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;

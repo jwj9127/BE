@@ -1,7 +1,7 @@
-package com.example.cloud.jwt;
+package com.example.cloud.oauth2.jwt;
 
-import com.example.cloud.dto.CustomOAuth2User;
-import com.example.cloud.dto.SocialUserDTO;
+import com.example.cloud.oauth2.dto.CustomOAuth2User;
+import com.example.cloud.oauth2.dto.SocialUserDTO;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
