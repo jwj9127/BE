@@ -1,6 +1,6 @@
 package com.example.cloud.chat.config;
 
-import com.example.cloud.service.chat.RedisSubscriber;
+import com.example.cloud.chat.service.RedisSubscriber;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +12,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+
 @Configuration
 public class RedisConfig {
 
@@ -40,8 +41,8 @@ public class RedisConfig {
         return new MessageListenerAdapter(subscriber, "onMessage");
     }
 
-    @Bean
     // Redis 데이터를 직렬화하고 역직렬화하는 데 사용
+    @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory) {
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(connectionFactory);
