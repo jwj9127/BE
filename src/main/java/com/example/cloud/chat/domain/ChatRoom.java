@@ -1,50 +1,36 @@
 package com.example.cloud.chat.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.cloud.oauth2.entity.SocialUserEntity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-
-@Entity
+@Document(collection = "chat_rooms")
 @Getter
-@Builder(toBuilder = true)
-@NoArgsConstructor
-@AllArgsConstructor
 public class ChatRoom {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
+    private String roomId;
+    private String studyGroupName;
+    private LocalDateTime createdAt;
+    private List<SocialUserEntity> members;
 
-    private Long sender;
+    public ChatRoom(String roomId, String studyGroupName, LocalDateTime createdAt) {
+        this.roomId = roomId;
+        this.studyGroupName = studyGroupName;
+        this.createdAt = createdAt;
+        this.members = new ArrayList<>();
+    }
 
-    private Long receiver;
-
-    private String title;
-
-    private Timestamp lastTime;
-
-    private String senderImage;
-
-    private String receiverImage;
-
-    public static ChatRoom to(Long receiver, Long sender, String findSenderProfileImage, String roomTitle, String findReceiverProfileImage) {
-        return ChatRoom.builder()
-                .receiver(receiver)
-                .sender(sender)
-                .senderImage(findSenderProfileImage)
-                .title(roomTitle)
-                .receiverImage(findReceiverProfileImage)
-                .lastTime(Timestamp.valueOf(LocalDateTime.now()))
-                .build();
-
+    public void addMember(SocialUserEntity member) {
+        this.members.add(member);
     }
 }
