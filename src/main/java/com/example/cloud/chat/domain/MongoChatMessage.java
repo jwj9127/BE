@@ -1,24 +1,26 @@
 package com.example.cloud.chat.domain;
 
-import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;
-
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import java.time.LocalDateTime;
 
 @Getter
+@NoArgsConstructor
 @Document(collection = "chat_messages")
-public class ChatMessage {
+public class MongoChatMessage {
+    @Id
     private String id;
     private String roomId;
     private String sender;
-    private String messageContent;
+    private String message;
     private LocalDateTime timestamp;
 
-    public ChatMessage(String roomId, String sender, String message, LocalDateTime timestamp) {
+    public MongoChatMessage(String roomId, String sender, String message) {
         this.roomId = roomId;
         this.sender = sender;
-        this.messageContent = message;
-        this.timestamp = timestamp;
+        this.message = message;
+        this.timestamp = LocalDateTime.now();
     }
-
 }
