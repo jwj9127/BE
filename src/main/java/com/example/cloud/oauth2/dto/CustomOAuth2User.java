@@ -1,4 +1,4 @@
-package com.example.cloud.dto;
+package com.example.cloud.oauth2.dto;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.core.user.OAuth2User;

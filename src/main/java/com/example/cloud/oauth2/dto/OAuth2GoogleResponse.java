@@ -1,6 +1,4 @@
-package com.example.cloud.dto;
-
-import lombok.RequiredArgsConstructor;
+package com.example.cloud.oauth2.dto;
 
 import java.util.Map;
 

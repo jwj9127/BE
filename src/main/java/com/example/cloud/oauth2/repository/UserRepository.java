@@ -1,6 +1,6 @@
-package com.example.cloud.repository;
+package com.example.cloud.oauth2.repository;
 
-import com.example.cloud.entity.SocialUserEntity;
+import com.example.cloud.oauth2.entity.SocialUserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<SocialUserEntity, Long> {

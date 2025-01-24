@@ -1,4 +1,4 @@
-package com.example.cloud.config;
+package com.example.cloud.oauth2.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

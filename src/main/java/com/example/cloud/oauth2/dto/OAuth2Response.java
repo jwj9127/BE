@@ -1,4 +1,4 @@
-package com.example.cloud.dto;
+package com.example.cloud.oauth2.dto;
 
 public interface OAuth2Response {
     // 제공자 : naver, google, kakao, ..등

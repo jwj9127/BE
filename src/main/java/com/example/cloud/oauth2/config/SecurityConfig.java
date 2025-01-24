@@ -1,9 +1,9 @@
-package com.example.cloud.config;
+package com.example.cloud.oauth2.config;
 
-import com.example.cloud.jwt.JWTFilter;
-import com.example.cloud.jwt.JWTUtil;
-import com.example.cloud.oauth2.CustomSuccessHandler;
-import com.example.cloud.service.CustomOAuth2UserService;
+import com.example.cloud.oauth2.jwt.JWTFilter;
+import com.example.cloud.oauth2.jwt.JWTUtil;
+import com.example.cloud.oauth2.handler.CustomSuccessHandler;
+import com.example.cloud.oauth2.service.CustomOAuth2UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -71,8 +71,8 @@ public class SecurityConfig {
         // 경로 별 인가
         http
                 .authorizeHttpRequests((auth) -> auth
-                        .requestMatchers("/").permitAll()
-                        .anyRequest().authenticated());
+                    .requestMatchers("/", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                    .anyRequest().authenticated());
 
         // 세션 설정 - JWT 방식으로 인증정보를 다룰거라 세션 상태를 STATELESS로 관리해야 함.
         http

@@ -1,7 +1,7 @@
-package com.example.cloud.oauth2;
+package com.example.cloud.oauth2.handler;
 
-import com.example.cloud.dto.CustomOAuth2User;
-import com.example.cloud.jwt.JWTUtil;
+import com.example.cloud.oauth2.dto.CustomOAuth2User;
+import com.example.cloud.oauth2.jwt.JWTUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

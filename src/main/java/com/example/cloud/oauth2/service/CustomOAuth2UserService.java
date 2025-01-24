@@ -1,8 +1,9 @@
-package com.example.cloud.service;
+package com.example.cloud.oauth2.service;
 
-import com.example.cloud.dto.*;
-import com.example.cloud.entity.SocialUserEntity;
-import com.example.cloud.repository.UserRepository;
+import com.example.cloud.oauth2.dto.*;
+import com.example.cloud.oauth2.entity.SocialUserEntity;
+import com.example.cloud.oauth2.repository.UserRepository;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;

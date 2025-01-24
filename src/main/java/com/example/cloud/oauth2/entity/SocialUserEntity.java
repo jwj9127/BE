@@ -1,4 +1,4 @@
-package com.example.cloud.entity;
+package com.example.cloud.oauth2.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
