@@ -1,36 +1,93 @@
-# 저희도 Gitmoji 쓰는 것 같길래 따로 정리했어요!
-| 아이콘 | 타이틀          | 설명                                 | 원문                                     |
-|--------|--------------|--------------------------------------|------------------------------------------|
-| 🎨     | [구조 개선]      | 코드의 구조/형태 개선                 | Improve structure / format of the code.  |
-| ⚡️     | [성능 향상]      | 성능 개선                             | Improve performance.                     |
-| 🔥     | [코드 제거]      | 코드/파일 삭제                        | Remove code or files.                    |
-| 🐛     | [버그 수정]      | 버그 수정                             | Fix a bug.                               |
-| 🚑     | [긴급 수정]      | 긴급 수정                             | Critical hotfix.                         |
-| ✨     | [기능 추가]      | 새 기능                               | Introduce new features.                  |
-| 📝     | [문서화]        | 문서 추가/수정                        | Add or update documentation.             |
-| 💄     | [UI 업데이트]    | UI/스타일 파일 추가/수정              | Add or update the UI and style files.    |
-| 🎉     | [프로젝트 시작]    | 프로젝트 시작                         | Begin a project.                         |
-| ✅     | [테스트]        | 테스트 추가/수정                      | Add or update tests.                     |
-| 🔒     | [보안 수정]      | 보안 이슈 수정                        | Fix security issues.                     |
-| 🔖     | [릴리즈 태그]     | 릴리즈/버전 태그                      | Release / Version tags.                  |
-| 💚     | [CI 수정]      | CI 빌드 수정                          | Fix CI Build.                            |
-| 📌     | [의존성 고정]     | 특정 버전 의존성 고정                 | Pin dependencies to specific versions.   |
-| 👷     | [CI 구성]      | CI 빌드 시스템 추가/수정              | Add or update CI build system.           |
-| 📈     | [분석 추가]      | 분석, 추적 코드 추가/수정             | Add or update analytics or track code.   |
-| ♻️     | [리팩토링]       | 코드 리팩토링                         | Refactor code.                           |
-| ➕     | [의존성 추가]     | 의존성 추가                           | Add a dependency.                        |
-| ➖     | [의존성 제거]     | 의존성 제거                           | Remove a dependency.                     |
-| 🔧     | [구성 변경]      | 구성 파일 추가/삭제                   | Add or update configuration files.       |
-| 🔨     | [스크립트 작업]    | 개발 스크립트 추가/수정               | Add or update development scripts.       |
-| 🌐     | [국제화]        | 국제화/현지화                         | Internationalization and localization.   |
-| 💩     | [코드 개선 필요]   | 똥싼 코드                             | Write bad code that needs to be improved.|
-| ⏪     | [롤백]         | 변경 내용 되돌리기                    | Revert changes.                          |
-| 🔀     | [브랜치 병합]     | 브랜치 합병                           | Merge branches.                          |
-| 📦     | [패키지 작업]     | 컴파일된 파일 추가/수정               | Add or update compiled files or packages.|
-| 👽     | [API 수정]     | 외부 API 변화로 인한 수정             | Update code due to external API changes. |
-| 🚚     | [리소스 이동]     | 리소스 이동, 이름 변경                | Move or rename resources.                |
-| 📄     | [라이센스]       | 라이센스 추가/수정                    | Add or update license.                   |
-| 💡     | [주석 추가]      | 주석 추가/수정                        | Add or update comments in source code.   |
-| 🗃     | [DB 변경]      | 데이터베이스 관련 수정                | Perform database related changes.        |
-| 🔊     | [로그 업데이트]    | 로그 추가/수정                        | Add or update logs.                      |
-| 🙈     | [.gitignore] | .gitignore 추가/수정                  | Add or update a .gitignore file.         |
+## 📛프로젝트명 - 코드에이블(Codable)
+
+#### Coding + able = codable (코팅을 잘할 수 있게 돕는다는 의미입니다!)
+
+<br/>
+
+## 🚧프로젝트 소개
+
+접근하기 쉽고 재밌는 web IDE 제작하기
+
+## 👩🏻‍💻 프로젝트 참여 인원
+
+#### Frontend - 3명
+#### Backend - 3명
+
+## ✨ 기술 스택
+
+- 기획디자인 : <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+- 프론트엔드 : <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white" /> <img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=SASS&logoColor=white" /> <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=Netlify&logoColor=white" />
+
+- 백엔드 : <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge&logo=JPA&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+<img src="https://img.shields.io/badge/AWS EC2-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+
+- ETC : <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+
+
+## 💡 서비스 핵심 기능
+
+**`웹 스터디 공간`**
+
+<br/>
+
+  - 팀만의 규칙 & 룰을 적용시킬 수 있는 웹 스터디 공간
+
+<br/>
+
+**`달력`**
+
+<br/>
+
+  - 당일 스터디 여부를 확인할 수 있습니다.
+  - 문제, 채팅 기록을 확인할 수 있습니다.
+
+<br/>
+
+**`코드 편집기`**
+
+<br/>
+
+  - 코딩 테스트 문제 지원
+  - JAVA, Python 지원
+
+<br/>
+
+**`채팅`**
+
+<br/>
+
+  - 코딩 테스트 이후 팀원간의 소통을 지원
+
+<br/>
+
+## 🖼️ 디자인
+
+- 시작화면
+<center><img src ="https://github.com/user-attachments/assets/395be0c1-c6a9-497d-b465-b87c74207c0f" /></center>
+
+- 메인 화면 (스터디 화면)
+<center> <img src ="https://github.com/user-attachments/assets/5099d0a8-fd32-418e-a17c-20abfdb56672" /></center>
+
+- 코드 편집기 화면
+<center> <img src ="https://github.com/user-attachments/assets/e6698f2b-d9cc-46fd-b511-655579bbc79e" /></center>
+
+- 스터디 채팅 화면
+<center> <img src ="https://github.com/user-attachments/assets/dd3b72fb-123f-4f4d-9f8e-ca906a36f85e" /></center>
+
+## 🍆 본인이 구현한 기능
+
+- 백엔드 인프라 구축 - Github Actions와 Docker로 CI/CD 구축 및 AWS EC2로 배포
+
+- 카카오 소셜 로그인 구현 및 JWT 구현
+
+## 🚩 트러블 슈팅
+
+### 1. 문제 - 소셜 로그인 및 JWT 토큰 처리
+#### 상황
+- 카카오 인증/인가 처리 과정을 전부 백엔드에서 담당하기 위해 로직을 처리해놨는데, 모든 로그인 과정이 마친 후 JWT 토큰을 프론트서버로 넘겨주지 못하는 오류가 발생 ( 알아보니 도메인이 다르면 쿠키를 보낼 수 없음 )
+
+#### 해결 방법
+- 쿠키, 세션을 통해 JWT 토큰을 넘겨주려했지만 실패하여 프론트, 백엔드 로직을 분리
+
+#### 배운 점 
+- 도메인이 다르면 쿠키, 세션이 정책에 의해 값이 넘어가지 않는다는 사실을 알게 되었다.
