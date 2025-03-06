@@ -77,9 +77,11 @@
 
 ## 🍆 본인이 구현한 기능
 
-- 백엔드 인프라 구축 - Github Actions와 Docker로 CI/CD 구축 및 AWS EC2로 배포
+- 백엔드 인프라 구축 - Github Actions의 workflows - main.yml파일을 생성하여 jobs에서 그래들 빌드, Docker Hub 로그인과 같은 steps를 처리하여 CI/CD 구축
 
-- 카카오 소셜 로그인 구현 및 JWT 구현
+- 백엔드 인프라 구축 - AWS EC2 인스턴스를 생성하고 RDS, Domain 설정 등을 적용시키며 배포
+
+- 카카오 소셜 로그인 구현 및 JWT 구현 - 카카오 API 인증 / 인가처리부터 시작하여 가져온 사용자 정보로 서버에서의 인증 / 인가 처리하려 하였으나 도메인 쿠키, 세션 이전의 문제가 발생하여 로직 분리
 
 ## 🚩 트러블 슈팅
 
